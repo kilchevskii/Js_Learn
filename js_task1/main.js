@@ -8,11 +8,33 @@
 
 // return
 // }
+// let findNextSquare = function(sq)  {
+//   if (Math.sqrt(sq**sq) % 1 == 0){
+//       console.log(`returns ${(sq+1)**2}`)
+//   } else {
+//       console.log(`returns -1 since ${sq} is not a perfect`);
+//   };
+// }
+// findNextSquare(11)
+
+
+
+
+
 let findNextSquare = function(sq)  {
   if (Math.sqrt(sq**sq) % 1 == 0){
-      console.log(`returns ${(sq+1)**2}`)
+     return sq = (sq+1)**2;
   } else {
-      console.log(`returns -1 since ${sq} is not a perfect`);
+     return sq;
   };
 }
-findNextSquare(12)
+  
+
+if (findNextSquare() == true) {
+  console.log(`returns ${(findNextSquare.sq+1)**2}`);
+} else {
+  console.log(`returns -1 since ${findNextSquare.sq} is not a perfect`)
+}
+
+
+findNextSquare(121)
