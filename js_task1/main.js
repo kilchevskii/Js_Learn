@@ -4,37 +4,21 @@
 // как он передан в качестве параметра. Напомним, что целочисленный идеальный квадрат - это такое целое число n, sqrt (n) которого тоже является целым числом.
 // Если параметр сам по себе не является идеальным квадратом, то должно быть возвращено -1. Вы можете предположить, что параметр положительный.
 
-// findNextSquare = (sq) => {
-
-// return
-// }
 // let findNextSquare = function(sq)  {
-//   if (Math.sqrt(sq**sq) % 1 == 0){
-//       console.log(`returns ${(sq+1)**2}`)
+//   if (Math.sqrt(sq) % 1 == 0) {
+//     return (`returns ${(sq+1)**2}`)
 //   } else {
-//       console.log(`returns -1 since ${sq} is not a perfect`);
+//     return (`returns -1 since ${sq} is not a perfect`);
 //   };
 // }
-// findNextSquare(11)
 
-
-
-
+// console.log(findNextSquare(16)); ДЛЯ СТОРОНЫ
 
 let findNextSquare = function(sq)  {
-  if (Math.sqrt(sq**sq) % 1 == 0){
-     return sq = (sq+1)**2;
+  if (Math.sqrt(sq) % 1 == 0) {
+    return (`returns ${(Math.sqrt(sq)+1)**2}`)
   } else {
-     return sq;
+    return (`returns -1 since ${sq} is not a perfect`);
   };
 }
-  
-
-if (findNextSquare() == true) {
-  console.log(`returns ${(findNextSquare.sq+1)**2}`);
-} else {
-  console.log(`returns -1 since ${findNextSquare.sq} is not a perfect`)
-}
-
-
-findNextSquare(121)
+console.log(findNextSquare(121));
