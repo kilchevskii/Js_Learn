@@ -10,9 +10,9 @@
 // }
 let findNextSquare = function(sq)  {
   if (Math.sqrt(sq**sq) % 1 == 0){
-      console.log((sq+1)**2)
+      console.log(`returns ${(sq+1)**2}`)
   } else {
-      console.log(`-1 since ${sq} is not a perfect`);
+      console.log(`returns -1 since ${sq} is not a perfect`);
   };
 }
 findNextSquare(12)
