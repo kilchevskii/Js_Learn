@@ -20,8 +20,9 @@ let accum = (str) => {
     // if (str[i].indexOf() < str[i]) {
     // console.log(str)
     // }
+
   } 
-  str = str.join('')
+  newMass = newMass.join('-');
   return newMass
 }
 
