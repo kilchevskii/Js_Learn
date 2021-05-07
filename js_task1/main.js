@@ -12,7 +12,7 @@
 //   };
 // }
 
-// console.log(findNextSquare(16)); ДЛЯ СТОРОНЫ
+// console.log(findNextSquare(9)); ДЛЯ СТОРОНЫ
 
 let findNextSquare = function(sq)  {
   if (Math.sqrt(sq) % 1 == 0) {
@@ -21,4 +21,4 @@ let findNextSquare = function(sq)  {
     return (`returns -1 since ${sq} is not a perfect`);
   };
 }
-console.log(findNextSquare(121));
+console.log(findNextSquare(144));
