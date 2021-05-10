@@ -8,21 +8,29 @@
 // }
 
 
-// let final = [];
+
+
+// let vowels = ['А', 'а','У', 'у', 'Е', 'е', 'ё', 'Ё', 'Ъ', 'ъ', 'О', 'о', 'Э', 'э', 'Я', 'я', 'И', 'и', 'Ь', 'ь', 'Ю', 'ю'];
+
+// let result = [];
+
+// let deleteVowels = (str) => {
+//   (str) = str.split('');
+//   // console.log(str)
+//   for (let i = 0; i < str.length; i++) {
+//     if (!vowels.includes(str[i])) {
+//       result[i] = str[i];
+//   }}
+//   (result) = result.join('');
+//   return result
+// }
+
+// console.log(deleteVowels('Этот сайт для лузеров ЛОЛ!'));
+
+
 
 let vowels = ['А', 'а','У', 'у', 'Е', 'е', 'ё', 'Ё', 'Ъ', 'ъ', 'О', 'о', 'Э', 'э', 'Я', 'я', 'И', 'и', 'Ь', 'ь', 'Ю', 'ю'];
 
-let result = [];
-
-let deleteVowels = (str) => {
-  (str) = str.split('');
-  // console.log(str)
-  for (let i = 0; i < str.length; i++) {
-    if (!vowels.includes(str[i])) {
-      result[i] = str[i];
-  }}
-  (result) = result.join('');
-  return result
-}
+let deleteVowels = (str) => {return str.split('').filter(item => !vowels.includes(item)).join('')};
 
 console.log(deleteVowels('Этот сайт для лузеров ЛОЛ!'));
