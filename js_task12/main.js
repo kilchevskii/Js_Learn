@@ -8,7 +8,8 @@
 
 
 let arrayDiff = (str) => {
-    return str.map(item => )
+    return str.filter((item, index, array) => {
+      return  array.indexOf(item) === index;
+    });
 }
-
 console.log(arrayDiff([1,2,2,2,3],[2]))
