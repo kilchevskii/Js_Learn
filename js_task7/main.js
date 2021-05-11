@@ -8,9 +8,5 @@
 // toJadenCase('The world is not what we think it is') —> 'The World Is Not What We Think It Is'
 
 let toJadenCase = (str) => {
-(str) = str.split(' ');
-(str) = str.map(item => item[0].toUpperCase() + item.slice(1));
-(str) = str.join(' ');
-return str
-}
+return str.split(' ').map(item => item[0].toUpperCase() + item.slice(1)).join(' ')}
 console.log(toJadenCase('The world is not what we think it is'));

@@ -19,7 +19,7 @@ let printer_error = (str) => {
       result[i] = str[i];
   }}
   (result) = result.join('');
-  error = `Шанс ошибки ${(result.length)/(str.length)}`
+  error = `Шанс ошибки ${(result.length) + '/' +(str.length)}`
   return error
 }
-console.log(printer_error('qqqTtss'));
+console.log(printer_error('qqqTtssqdqwehwre'));

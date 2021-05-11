@@ -11,9 +11,7 @@
 // Должна быть возвращена следующая строка «Нашел иголку на позиции 2»
 
 let findNeedle = (str) => {
-(str) = str.indexOf("needle", 0)
-
-return `Нашел иголку на позиции ${str}`
+    return `Нашел иголку на позиции ${str.indexOf("needle")}` 
 }
 
 console.log(findNeedle(["bla","wekmvever","needle","bntyn","qwd","qfverv","rtbrtb"]))

@@ -2,9 +2,6 @@
 // Строка никогда не будет пустой, и вам не нужно учитывать разные типы данных.
 
 let simple = (str) => {
-str = str.split(' ');
-str = str.map(item => item.length)
-str = str.sort().shift();
-return str
+    return str.split(' ').map(item => item.length).sort().shift();
 }
 console.log(simple('qwe qwer qq q'));
