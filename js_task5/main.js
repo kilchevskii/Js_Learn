@@ -9,28 +9,9 @@ const { title } = require("node:process");
 // correctPin('5567') --> true
 // correctPin('5432567') --> false
 
-// let correctPin = (str) => {
-//     if (str.length > 6 || str.length < 4) {
-//     return false
-//     } else if (str == Number(str)) {
-//       return true
-//     } else {
-//       return false
-//     }
-//   }
-// console.log(correctPin("1111111"));
+let correctPin = (str) => (str == Number(str) && (str.length <= 6 && str.length >= 4)) 
+    
+console.log(correctPin("666666"));
 
-// str.split('')
 
-let correctPin = (str) => {
-    return str.split('').map((item, index, array) => {
-      if (array.length > 6 || array.length < 4) {
-        return false
-      } else if (array == Number(str)){
-            return true
-            } else {
-            return false
-        }
-    }).join('');
-}
-console.log(correctPin("1111"));
+

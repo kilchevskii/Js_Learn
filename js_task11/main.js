@@ -6,6 +6,6 @@
 
 
 
-let invert = (str) => {return str.map(item => (-item))}
+let invert = (str) => (str.map(item => (-item)))
 
-console.log(invert([1,2,3,-4,-5]))
+console.log(invert([1,2,3,4,-5]))
