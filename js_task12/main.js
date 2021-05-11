@@ -8,6 +8,6 @@
 
 
 let arrayDiff = (a, b) => {
-  return a.concat(b).filter((item, index, array) => {return array.indexOf(item) === index;})}
+  return a.concat(b).filter((item, index, array) => {return array.indexOf(item) === index;}).sort()}
 
-console.log(arrayDiff([1,2,2,2,3],[2,3,1,5]))
+console.log(arrayDiff([1,2,2,2,3],[2,3,8,1,5]))
