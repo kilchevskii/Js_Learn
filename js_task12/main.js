@@ -7,9 +7,7 @@
 
 
 
-let arrayDiff = (str) => {
-    return str.filter((item, index, array) => {
-      return  array.indexOf(item) === index;
-    });
-}
-console.log(arrayDiff([1,2,2,2,3],[2]))
+let arrayDiff = (a, b) => {
+  return a.concat(b).filter((item, index, array) => {return array.indexOf(item) === index;})}
+
+console.log(arrayDiff([1,2,2,2,3],[2,3,1,5]))
