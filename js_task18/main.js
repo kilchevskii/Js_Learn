@@ -1,17 +1,11 @@
-// Напишите функцию, которая переделывает строку из camelCase в snake_case.
-
-// Например:
-
-// solution("redevCourses") -> "redev_courses"
+// Напишите функцию, которая проверит, является ли строка палиндромом.
+// (Для того, чтобы решить эту задачу, надо загуглить)
 
 
-
-let solution = (str) => {
-    var str = str.replace(/[A-Z]/g, function (letter) {
-        return '_' + letter.toLowerCase();
-      });
-    return str.replace(/^_/, "");
+let palindrom = str => {
+    str.toLowerCase();
+    return str === str.split('').reverse().join('')
 }
 
-console.log(solution("redevCourses"))
+console.log(palindrom("anna"))
 
