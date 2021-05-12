@@ -5,15 +5,11 @@
 
 // Например, если n = 5 на выходе у Вас должно быть 5,4,3,2,1.
 
-
-
-
-
-let prevNumber = (str) => {
-    return str.reduce((count, item) => {
-      return  count - item;
-    }, 0);
-}
-console.log(prevNumber([6]));
-
  
+let prevNumber = (str) => {
+  for(let i = 0; i < str; i++) {
+   console.log(str - i);
+  }
+}
+prevNumber(5);
+
