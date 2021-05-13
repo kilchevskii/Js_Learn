@@ -13,17 +13,14 @@
 
 
 let createDreamTeam = str => {
-    return str.filter((item, index, array) => {
+    return str.map((item, index, array) => {
         if (item == Number(item) || item == null || item == Boolean(item)) {
-            return false
-        } else {
-           return (str) = array.map(item => item).sort();
+           return 
+        } else if (item == String(item)) {
+           return item[0];
         }
-});
+}).sort().join('');
 }
 console.log(createDreamTeam(['Olivia', 1111, 'Lily', 'Oscar', true, null]))
 
-// let createDreamTeam = str => {
-//     return str.map(item => item[0]).sort().join('');
-// }
-// console.log(createDreamTeam(['Matt', 'Ann', 'Dmitry', 'Max']))
+
