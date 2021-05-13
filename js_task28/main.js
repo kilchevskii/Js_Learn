@@ -1,18 +1,15 @@
-// Напишите функцию replaceAll(find, replace, str), которая заменяет в строке str все вхождение подстроки find на подстроку replace.
+// Напишите функцию removeDuplicate(str), которая возвращает строку, 
+// очищенную от слов-дупликатов, т.е. каждое слово должно повторяться не более одного раза.
 
-// let str = 'abc def def lom abc abc def';
+// let str = "вишня, груша, слива, груша";
 
-// function replaceAll(find, replace, str) {};
+// function removeDuplicate(str) {};
 
-// replaceAll('abc', 'x', str)
+// removeDuplicate(str)
 
-let str = 'abc def def lom abc abc def';
+let str = "вишня, груша, слива, груша";
 
-function replaceAll(find, replace, str) {
-while( str.indexOf(find) > -1) {
-str = str.replace(find, replace);
-}
-return str;
-}
+let removeDuplicate = (str) => {
+return str.split(',').filter((item, index, array) => {return array.indexOf(item) === index;})}
 
-console.log(replaceAll('abc', 'x', str));
+console.log(removeDuplicate(str))

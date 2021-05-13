@@ -1,12 +1,9 @@
-// Напишите функцию replaceAll(find, replace, str), которая заменяет в строке str все вхождение подстроки find на подстроку replace.
+// Напишите функцию unique_letters(str), которая возвращает строку, оставив в ней только уникальные символы, т.е. встречающиеся в строке один раз.
 
-// let str = 'abc def def lom abc abc def';
+// function unique_letters(str) {};
 
-// function replaceAll(find, replace, str) {};
+// unique_letters('anaconda')
 
-// replaceAll('abc', 'x', str)
-
-let str = 'abc def def lom abc abc def';
 
 function replaceAll(find, replace, str) {
 while( str.indexOf(find) > -1) {
@@ -15,4 +12,4 @@ str = str.replace(find, replace);
 return str;
 }
 
-console.log(replaceAll('abc', 'x', str));
+console.log(replaceAll(anaconda);
