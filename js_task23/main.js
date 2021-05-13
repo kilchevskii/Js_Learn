@@ -41,10 +41,10 @@ let chainMaker = {
    finishChain() { 
      return this.step.join(' ~~ ');
    },
-   End() {
+   end() {
      this.step.length = 0;
      return this
    }   
 };
 
-console.log(chainMaker.addLink(1).addLink(2).reverseChain().addLink(3).finishChain().End())
+console.log(chainMaker.addLink(1).addLink(2).reverseChain().addLink(3).finishChain().end())
