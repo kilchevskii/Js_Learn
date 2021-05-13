@@ -9,7 +9,7 @@
 
 
 
-var str = 'abc def ghi jkl mno pqr stu';
+let str = 'abc def ghi jkl mno pqr stu';
 String.prototype.startsWith = function(start) {
    str = String(str);
    let regex = new RegExp('^' + start, 'g'),
@@ -18,4 +18,3 @@ String.prototype.startsWith = function(start) {
 }
 
 console.log(str.startsWith('abc'));
-
