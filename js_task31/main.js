@@ -1,11 +1,13 @@
-// Напишите функцию alphabetize(str), которая возвращает строку, отсортировав её символы в алфавитном порядке.
+// Напишите функцию `cutString(str, n)`, которая удаляет лишние слова из строки str, оставив в ней n слов.
 
-// function alphabetize(str) {};
+// `let str = "Сила тяжести приложена к центру масс тела";`
 
-// alphabetize("Europe")
+// `function cutString(str, n) {};`
 
+// `cutString(str, 5)`
+let str = "Сила тяжести приложена к центру масс тела";
 
-let alphabetize = (str) => {
-return str.split('').sort()}
+let cutString = (str, index) => {
+return str.split(' ').slice(0, index)}
 
-console.log(alphabetize('Europe'));
+console.log(cutString(str, 5));
