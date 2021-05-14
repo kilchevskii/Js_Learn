@@ -19,4 +19,4 @@ String.prototype.endsWith = function(substring) {
     return this.substr(this.length - substring.length) === substring;
   };
 
-console.log((str.endsWith(str1)));
+console.log((str.endsWith(str2)));
