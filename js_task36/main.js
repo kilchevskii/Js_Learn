@@ -1,22 +1,20 @@
-// Создайте метод объекта `String endsWith()`, который сравнивает подстроку str1 с
-//  окончанием исходной строки str и определяет, заканчивается ли строка символами подстроки.
+// Напишите функцию colonOdd(num), которая принимает число num в качестве аргумента 
+// и вставляет двоеточие (:) между двумя нечетными числами. 
+// Например, если вводится число 55639217, то на выходе должно быть 5:563:921:7.
 
-// `let str = "Каждый охотник желает знать"; `
-// `let str1 = "скрипт";`
-// `let str2 = "знать";`
 
-// `String.prototype.endsWith = function(substring) {};`
+function colonOdd (num) {
+  let str = num.toString();
+  let result = [str[0]];
+  for(let i=1; i<str.length; i++) {
+      if((str[i-1]%2 !== 0)&&(str[i]%2 !== 0)) {
+        result.push(':', str[i]);
+       }
+      else {
+        result.push(str[i]);
+      }
+  }
+  return result.join('');  
+}
 
-// `str.endsWith(str1))` // false
-// `str.endsWith(str2))` // true
-
-let str = "Каждый охотник желает знать"; 
-let str1 = "скрипт";
-let str2 = "знать";
-
-String.prototype.endsWith = function(substring) {
-    if(substring.length > this.length) return false;
-    return this.substr(this.length - substring.length) === substring;
-  };
-
-console.log((str.endsWith(str2)));
+console.log(colonOdd('55639217'));
