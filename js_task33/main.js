@@ -8,7 +8,9 @@
 
 let str = " Pasha is a good boy ";
 
-let strip = (str) => {return str.trim('')}
+// let strip = (str) => {return str.trim('')}
 // ну это по ахуевшему, если пробелы только по краям
+
+let strip = (str) => {return str.trim('')}
 
 console.log(strip(str));
