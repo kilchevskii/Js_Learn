@@ -10,6 +10,6 @@
 let str = "вишня, груша, слива, груша";
 
 let removeDuplicate = (str) => {
-return str.split(',').filter((item, index, array) => {return array.indexOf(item) === index;})}
+return str.split(',').filter((item, index, array) => {return array.indexOf(item) === index;}).join('')}
 
 console.log(removeDuplicate(str))
