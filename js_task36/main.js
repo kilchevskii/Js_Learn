@@ -17,4 +17,4 @@ function colonOdd (num) {
   return result.join('');  
 }
 
-console.log(colonOdd('55639217'));
+console.log(colonOdd(55639217));
