@@ -10,7 +10,7 @@ let prevNumber = number => {
   let count = '';
   if (number > 0) {
     for (let i = 0; i < number; i++) {
-      count = count + ' ' + String(number - i);
+      count += ' ' + (number - i);
     } return count
   } else {
     return ("Некорректное число");

@@ -13,12 +13,15 @@
 
 
 
-let busStops = (arr) => {
-    let Nflat = arr => {
-    return arr.reduce(function (flat, toFlatten) {
-      return flat.concat(Array.isArray(toFlatten) ? busStops(toFlatten) : toFlatten);
-    }, []);}
-    let chetniy = Nflat.
-  }
-
+let busStops = arr => {
+  let normarr = arr.flat(Infinity);
+  return normarr.reduce((res, item, index) => {
+    if (index % 2 !== 0) {
+      res -= item;
+    } else {
+      res += item;
+    } return res
+    }, 0); 
+}
 console.log(busStops([[3, 0], [9, 1], [4, 10], [12, 2], [6, 1], [7, 10]]));
+
