@@ -12,16 +12,10 @@
 // anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa']
 
 
-let anagrams = arr => {
-  let map = new Map();
+let anagrams = (a, b) => {
+  let checked = a.split('').sort().join('')
+  return b.filter(item => item.split('').sort().join('') === checked)
+} 
 
-  for (let word of arr) {
-    let sorted = word.toLowerCase().split("").sort().join("");
-    map.set(sorted, word);
-  }
-
-  return Array.from(map.values());
-}
-  
-console.log(anagrams(["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"]))
+console.log(anagrams('abba', [ 'aabb', 'abcd', 'bbaa', 'dada']))
   

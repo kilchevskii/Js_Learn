@@ -4,8 +4,8 @@
 
 
 function moveZeros(arr){
-    let filtered = arr.filter(el => el !== 0);
-    return filtered.concat(Array(arr.length - filtered.length).fill(0));
+    let filtered = arr.filter(item => item !== 0);
+    return filtered.concat(Array(arr.length - filtered.length).fill(0))  ;
   }
 
-console.log(moveZeros([false,1,0,1,2,0,1,3,"a"]))
+console.log(moveZeros([0,false,1,0,1,2,0,1,3,"a",0]))
