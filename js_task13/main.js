@@ -6,10 +6,29 @@
 // Например, если n = 5 на выходе у Вас должно быть 5,4,3,2,1.
 
  
-let prevNumber = (str) => {
-  for(let i = 0; i < str; i++) {
-   console.log(str - i);
-  }
-}
-prevNumber(5);
+let prevNumber = number => {
+  let count = '';
+  if (number > 0) {
+    for (let i = 0; i < number; i++) {
+      count = count + ' ' + String(number - i);
+    } return count
+  } else {
+    return ("Некорректное число");
+  }}
+
+
+console.log(prevNumber(10));
+
+
+
+
+// let sum = arr => {
+//   let newStr = '';
+//   for (i = 0; i < arr.length; i++) {
+//     newStr = newStr + ' ' + String(arr[i])
+//   } return newStr
+// }
+
+
+// console.log(sum(['я', 'люблю', 'маму']))
 
