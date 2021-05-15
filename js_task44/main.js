@@ -6,8 +6,13 @@
 // squareDigits(9119) --> 811181
 
 
-let squareDigits = str => {
-  return str.split('').map(item => item ** 2).join('')
+let squareDigits = num => {
+  return Number( 
+    num.toString()
+    .split('')
+    .map(item => item * item) 
+    .join('') 
+  );
 }
 
-console.log(squareDigits('9119'));
+console.log(squareDigits(9119));
