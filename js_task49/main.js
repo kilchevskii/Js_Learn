@@ -9,15 +9,12 @@
 // findMissingLetter(['a','b','c','d','f']) -> 'e'
 
 
-
-let findMissingLetter = arr => {
-    let ch0 = arr.join('').charCodeAt(0), ch;
-    arr.every(function(v, i){
-      ch = String.fromCharCode(ch0 + i);
-      return ch === v;
-    });
-    return ch === arr[arr.length-1] ? undefined : ch;
+function findMissingLetter(arr){
+  let num = 97;
+  for(let letter of arr){
+      if(letter.charCodeAt(0) !== num) return String.fromCharCode(num);
+      num++;
   }
-
+  return String.fromCharCode(num)  
+}
 console.log(findMissingLetter(['a','b','c','d','f']))
-  
