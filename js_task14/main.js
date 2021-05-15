@@ -7,13 +7,12 @@
 
 
 // let sumTwoNum = (num) => {
-//   return num.slice().sort((a, b) => a - b).slice(0, 2).reduce((a, b) => a + b);
+//   return num.sort((a, b) => a - b).slice(-4).sort((a, b) => a - b).slice(0, 2).reduce((a, b) => a + b)
 // }
 
-// console.log(sumTwoNum([-12,-423,54,-1235,-3,-15,-2,52]))
 
-let sumTwoNum = (num) => {
-  return num.sort((a, b) => a - b).slice(-4).sort((a, b) => a - b).slice(0, 2).reduce((a, b) => a + b)
+let sumTwoNum = arr => {
+  return arr.sort((a,b) => a-b).filter(item => item > 0).slice(0, 2).reduce((a, b) => a + b)
 }
 
 console.log(sumTwoNum([-12,-423,54,-1235,3,15,-2,52]))
