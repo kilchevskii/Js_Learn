@@ -5,8 +5,7 @@
 // comparison('string', 'StRiNg')
 
 let comparison = (str1, str2) => {
-    let compare = str1.toLowerCase() === str2.toLowerCase();
-    return compare
+    return  str1.toLowerCase() === str2.toLowerCase();
 }
 
 console.log(comparison('string', 'sTrInG'));
