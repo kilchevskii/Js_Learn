@@ -7,18 +7,12 @@
 // flip('R', [3, 2, 1, 2])     =>  [1, 2, 2, 3]
 // flip('L', [1, 4, 5, 3, 5])  =>  [5, 5, 4, 3, 1]
 
-function flip(d, a) {
-  function min (a, b) {
-    return a - b 
+let flip = (d, a) => {
+  switch(d) {
+    case 'R':
+    return a.sort((y, z) => y - z)  
+    case 'L':
+    return a.sort((y, z) => z - y)  
   }
-  function max (a, b) {
-    return b - a
-  }
-  if (d = 'R') {
-    a.sort(min)
-  } else if (d = 'L') {
-    a.sort(max)
-  }
-  return a
 }
 console.log(flip('L', [0, 2, 3, 1, 4, 10]));
