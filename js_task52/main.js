@@ -7,10 +7,10 @@
 // GetMiddle("middle") should return "dd"
 // GetMiddle("A") should return "A"
 
-function getMiddle (str) {
+function tickets (str) {
   if (str.length % 2 == 0) {
     return str.split('').slice((str.length/2) - 1, (str.length/2) + 1).join('')
   }
     return str.split('').slice((str.length/2), (str.length/2) + 1).join('')
 }
-console.log(getMiddle('testing'));
+console.log(tickets([25, 25, ]));
