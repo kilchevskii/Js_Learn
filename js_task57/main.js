@@ -1,16 +1,19 @@
-// Завершите решение так, чтобы оно разбило строку на пары из двух символов. 
-// Если строка содержит нечетное количество символов, она должна 
-// заменить отсутствующий второй символ последней пары подчеркиванием ('_'). 
+// Напишите функцию sumPPG, которая принимает два объекта игрока 
+// NBA / struct / Hash / Dict / Class и суммирует их PPG.
 
-function solution (str) {
-  let result = []
-  for(let i = 0; i < str.length; i += 2) {
-    if (i === str.length - 1) {
-      result.push(str.slice(i) + '_')
-    } else {
-      result.push(str.slice(i, i + 2))
-    }
-  } return result
+// let iverson = new NBAplayer("Iverson", "76ers", 11.2);
+// let jordan = new NBAplaer("Jordan", "bulls", 20.2);
+// sumPPG(iverson, jordan); 
+
+function NBAplayer(name, team, ppg){
+  this.name=name;
+  this.team=team;
+  this.ppg=ppg;
 }
-console.log(solution('abcdef'));
+let iverson = new NBAplayer("Iverson", "76ers", 11.2);
+let jordan = new NBAplayer("Jordan", "bulls", 20.2);
+function sumPPG (a, b) {
+  return a.ppg + b.ppg
+}
+console.log(sumPPG(iverson, jordan));
 
