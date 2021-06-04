@@ -7,15 +7,18 @@
 // rgb(0,0,0) => 000000
 // rgb(148, 0, 211) => 9400D3
 
-function rgb(r, g, b)  {
-  r16 = (r <= 0 ? (r = 0).toString(16) + (0).toString(16) : r.toString(16)) || (r < 255 ? (r = 255).toString(16) : r.toString(16))
-  g16 = (g <= 0 ? (g = 0).toString(16) + (0).toString(16) : g.toString(16)) || (g < 255 ? (g = 255).toString(16) : g.toString(16))
-  b16 = (b <= 0 ? (b = 0).toString(16) + (0).toString(16) : b.toString(16)) || (b < 255 ? (b = 255).toString(16) : b.toString(16))
-  // if(r > 255 )
-
-  str = `${r16}${g16}${b16}`
-  return str
+function rgb(r, g, b) {
+  const convert = function(val) {
+    if(val < 0) {
+      return '00';
+    }
+    if(val > 255) {
+      return 'FF';
+    }
+    return (val > 15 ? val.toString(16) : '0' + val.toString(16)).toUpperCase();
+  }
+  return convert(r) + convert(g) + convert(b); 
 }
 
-console.log(rgb(300,0,0));
+console.log(rgb(333,255,47));
 
