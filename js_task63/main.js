@@ -4,11 +4,10 @@
 // anagrams('laser', ['lazing', 'lazy',  'lacer']) => []
 
 
-function anagrams(a, b) {
-  betta = b.join(' ')
-
-
-}
+function anagrams(str) {
+  let checked = a.split('').sort().join('')
+  return b.filter(item => item.split('').sort().join('') === checked)
+  }
 
 console.log(anagrams('laser', ['lazing', 'lazy',  'lacer']));
 
