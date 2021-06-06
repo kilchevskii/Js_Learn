@@ -1,11 +1,11 @@
     function space(str) {
         str = str.split('');
-        return str.map(function(el, i){
-            if(el == '-' || el == '_'){
-            el = str[i+1].toUpperCase();
-            str.splice(i+1, 1);
+        return str.map(function(item, index){
+            if(item == '-' || item == '_'){
+            item = str[index+1].toUpperCase();
+            str.splice(index + 1, 1);
             }
-            return el;
+            return item;
         }).join('');
         }
     console.log(space('the-stealth-warrior'));
